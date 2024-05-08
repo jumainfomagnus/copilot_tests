@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Welcome</h2>
+
+<p id="welcome"></p>
+
+<script>
+// Get the user's name from the URL parameters
+var urlParams = new URLSearchParams(window.location.search);
+var name = urlParams.get('name');
+
+// Display the user's name
+document.getElementById('welcome').innerHTML = 'Hello, ' + name + '!';
+</script>
+
+</body>
+</html>
